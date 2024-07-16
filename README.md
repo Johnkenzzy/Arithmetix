@@ -12,7 +12,7 @@ A Simple Command-line Calculator
 #### Features:
 
 * Interactive user interface (command-line interface)
-* Prompt users on [available functionalities][Functionalities] to choose from
+* Prompt users on available ==functionalities== to choose from
 
 #### Functionalities:
 
