@@ -4,23 +4,28 @@
 #include <stdarg.h>
 
 /**
-* addNums - calculate the sum of a given list of numbers
+* subNums - calculate the subtraction of a given list of numbers
 *
 * @n: fixed number 
-* @...: array of numbers to be added
+* @...: array of numbers to be subtracted from each other
 *
-* return: the sum of numbers given
-*/int addNums(int n, int *nums)
+* return: the the remainder from subtracting two/group of numbers given
+*/int subNums(int n, int *nums)
 {
 	int i;
-	int sum;
+	int sub;
 
 	for (i = 0; i < n; i++)
 	{
-		sum += nums[i];
+		if (i == 0)
+		{
+			sub = nums[i];
+		}
+		else
+			sub -= nums[i];
 	}
 
-	return (sum);
+	return (sub);
 }
 
 /**
@@ -35,7 +40,7 @@
 	int total;
 
 	total = 0;
-	printf("Enter the number of digits you want to sum up: ");
+	printf("Enter the number of digits you want to subtract from each other: ");
 	scanf("%d", &n);
 
 	if (n < 1 || n == ' ')
@@ -59,10 +64,10 @@
 			printf("---   ");
 			scanf("%d", &arr[i]);
 			if (arr[i] != arr[n - 1])
-				printf(" + \n");
+				printf(" - \n");
 		}
 	}
-	total = addNums(n, arr);
+	total = subNums(n, arr);
 	printf("-----------------\n");
 	printf("Total = %d \n", total);
 	free(arr);
