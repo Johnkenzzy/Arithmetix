@@ -32,7 +32,8 @@
 * num_arr - creates an array with numbers as its elements
 * @: takes no arguments
 * returns: nothing
-*/void num_arr(void)
+*/
+/*void num_arr(void)
 {
 	int n;
 	float *arr;
@@ -76,4 +77,4 @@
 void main()
 {
 	num_arr();
-}
+}*/

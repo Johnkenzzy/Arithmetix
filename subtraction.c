@@ -10,7 +10,7 @@
 * @...: array of numbers to be subtracted from each other
 *
 * return: the the remainder from subtracting two/group of numbers given
-*/int subNums(int n, int *nums)
+*/int subtractNums(int n, int *nums)
 {
 	int i;
 	int sub;
@@ -32,7 +32,8 @@
 * num_arr - creates an array with numbers as its elements
 * @: takes no arguments
 * returns: nothing
-*/void num_arr(void)
+*/
+/*void num_arr(void)
 {
 	int n;
 	int *arr;
@@ -76,4 +77,4 @@
 void main()
 {
 	num_arr();
-}
+}*/
